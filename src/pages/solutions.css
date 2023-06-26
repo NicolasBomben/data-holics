@@ -1,0 +1,46 @@
+.solutions-main{
+    width: 100vw;
+    height: 200px;
+    background: #F4F4F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.solutions-main-text{
+    font-weight: 300;
+    font-size: 36px;
+}
+
+.solutions-secondary{
+    height: 200px;
+    padding-top: 4rem;
+}
+
+.secondary-text{
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+}
+
+.solutions-container{
+   
+}
+
+.solutions-box{
+
+}
+
+.box-text{
+
+}
+
+.box-img{
+    width: 260px;
+    height: 300px;
+    background: #E85241;
+}
+
+.box-list{
+    
+}
