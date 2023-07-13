@@ -1,44 +1,39 @@
 /* Estilo base para la barra de navegación */
 .header{
-    position: static;
     display: flex;
     align-items: center;
     gap: 30%;
-    width: 100%;
-    height: 150px;
-    margin: auto;
-    font-size: 15px;
+    width: 100vw;
+    height: 180px;
     background-color: white;
-    font-weight: 100;
 }
 
 .logo{
   display: flex;
   width: 15%;
-  margin-left: 5%;
+  margin-left: 8%;
   padding-top: 0.5rem;
-  
 }
   
   /* Estilo para la lista desordenada */
   nav ul {
     list-style-type: none;
     display: flex;
-    padding-top: 1rem;
+    margin-left: 10%;
+    gap: 15px;
   }
   
   /* Estilo para cada elemento de la lista */
   nav li {
-    margin-right: 1rem;
+    padding: 1rem;
   }
   
   /* Estilo para el enlace */
   nav li a {
     text-decoration: none;
     color: black;
-    padding: 0.5rem;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 25px;
+    font-weight: 300;
   }
   
   /* Estilo para el enlace cuando está activo */

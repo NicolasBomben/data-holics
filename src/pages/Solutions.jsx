@@ -3,6 +3,7 @@ import React from 'react'
 import "./solutions.css";
 
 const Solutions = () => {
+  
   return (
     <section className="solutions">
       <div className="solutions-main">
@@ -59,9 +60,6 @@ const Solutions = () => {
             </li>
           </ul>
         </div>
-
-
-
       </div>
     </section>
   )
