@@ -24,15 +24,15 @@ const Home = () => {
             As a small or medium-sized business owner, you know adapting quickly
             to changing market conditions is essential for success. That`s where
             we come in.
-            <br />
-            <br />
+          </p>
+          <p className="home-text">
             At our company, we specialize in leveraging the latest in machine
             learning technology to help businesses like yours eliminate
             unnecessary manual tasks to improve productivity and develop data
             strategies to make your decision-making process more efficient and
             data-driven.
-            <br />
-            <br />
+          </p>
+          <p className="home-text">
             We work together to design and implement custom tech solutions that
             have a real impact on your bottom line. With our expertise in
             machine learning, we can help you make smarter decisions and stay
@@ -75,7 +75,7 @@ const Home = () => {
         </div>
 
         <div className="home-box-5">
-            <h2 className="understand-title">Understand</h2>
+            <h4 className="understand-title">Understand</h4>
               <p className="understand-text">
               We want to fully understand what are your business data needings,
               your challenges, and your goals.
