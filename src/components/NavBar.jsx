@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import  logoDataholics from '../assets/logoDataholics.png';
+import  logoData from '../assets/logoData.png';
 
 import "./navbar.css"
 
@@ -8,7 +8,7 @@ const Navbar = () => {
 
     return(
         <header className="header">
-            <img  className="logo"src={ logoDataholics } alt="logo holics"></img>
+            <img  className="logo"src={ logoData } alt="logo holics"></img>
             <nav>
             <ul>
                 <li>

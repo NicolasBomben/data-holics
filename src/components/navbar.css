@@ -1,18 +1,11 @@
 /* Estilo base para la barra de navegación */
 .header{
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 30%;
     width: 100vw;
-    height: 180px;
+    height: 100px;
     background-color: white;
-}
-
-.logo{
-  display: flex;
-  width: 15%;
-  margin-left: 8%;
-  padding-top: 0.5rem;
 }
   
   /* Estilo para la lista desordenada */
@@ -20,24 +13,24 @@
     list-style-type: none;
     display: flex;
     margin-left: 10%;
-    gap: 15px;
+    padding: 1rem;
   }
   
   /* Estilo para cada elemento de la lista */
   nav li {
-    padding: 1rem;
+    padding: 1.5rem;
   }
   
   /* Estilo para el enlace */
   nav li a {
     text-decoration: none;
     color: black;
-    font-size: 25px;
-    font-weight: 300;
+    font-size: 1.25rem;
+    font-weight: 400;
   }
   
   /* Estilo para el enlace cuando está activo */
   nav li a:hover {
-    color: #DA24FF;
+    color: #E85241;
   }
   
