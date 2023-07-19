@@ -1,11 +1,13 @@
 /* Estilo base para la barra de navegación */
 .header{
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100px;
+    height: 118px;
     background-color: white;
+    overflow-y: hidden;
 }
   
   /* Estilo para la lista desordenada */

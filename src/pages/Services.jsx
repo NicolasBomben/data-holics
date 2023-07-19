@@ -1,89 +1,49 @@
-
 //style
 import "./services.css";
 
 const Services = () => {
   return (
     <>
-      <section className="main-services">
-        <h1 className="main-services-title">Our Services</h1>
-        <span className="main-arrow-services"></span>
-      </section>
-
-      <section className="analytics-services-container">
-        <div className="analytics-services-box">
-          <span className="analytics-services-title">Basic Analytics</span>
-          <div className="analytics-services-img">Imagen</div>
+      <section className="services-container">
+        <div className="home-box-1">
+          <h1 className="services-title">Our Services</h1>
         </div>
 
-        <div className="analytics-services-box">
-          <span className="analytics-services-title">Advanced Analytics</span>
-          <div className="analytics-services-img">Imagen</div>
-        </div>
+        <div className="services-box">
 
-        <div className="analytics-services-box">
-          <span className="analytics-services-title">Full Analytics</span>
-          <div className="analytics-services-img">Imagen</div>
-        </div>
-      </section>
+          <div className="card">
+            <h2 className="card-title">Basic Analytics</h2>
+            <div className="card-cuadrado"></div>
+            <div className="card-content">
+              <p className="card-text">Reunion de diagnostico.</p>
+              <p className="card-text">Data review.</p>
+              <p className="card-text">Deliver.</p>
+            </div>
+          </div>
 
-      <section className="analytics-list-container">
-        <div>
-          <ul className="analytics-services-list">
-            <li>Reunión de diagnóstico: charlamos necesidades.</li>
-          </ul>
-          <ul className="analytics-services-list">
-            <li>
-              Data review: revisamos que la data sea coherente y consistente.
-            </li>
-          </ul>
-          <ul className="analytics-services-list">
-            <li>
-              Deliver: se explica como acceder a las tablas, como leer los
-              KPI`s, etc.
-            </li>
-          </ul>
-          <ul className="analytics-services-list">
-            <li>
-              Cada vez que se envie la data actualizada se actualizan las
-              tablas.
-            </li>
-          </ul>
-        </div>
+          <div className="card">
+            <h2 className="card-title">Advanced Analytics</h2>
+            <div className="card-cuadrado"></div>
+            <div className="card-content">
+              <p className="card-text">Reunion de diagnostico.</p>
+              <p className="card-text">Data review.</p>
+              <p className="card-text">Deliver.</p>
+              <p className="card-text">Seguimiento continuo.</p>
+              <p className="card-text">Actualizacion de tabas.</p>
+            </div>
+          </div>
 
-        <div>
-          <ul className="analytics-services-list">
-            <li>Reunión de diagnóstico: charlamos necesidades.</li>
-          </ul>
-          <ul className="analytics-services-list">
-            <li>
-              Data review: revisamos que la data sea coherente y consistente.
-            </li>
-          </ul>
-          <ul className="analytics-services-list">
-            <li>Seguimiento continuo.</li>
-          </ul>
-          <ul className="analytics-services-list">
-            <li>
-              Cada vez que se envie la data actualizada se actualizan las
-              tablas.
-            </li>
-          </ul>
-        </div>
+          <div className="card">
+            <h2 className="card-title">Basic Analytics</h2>
+            <div className="card-cuadrado"></div>
+            <div className="card-content">
+              <p className="card-text">Todo lo anterior.</p>
+              <p className="card-text">Reuniones periodicas.</p>
+              <p className="card-text">Mayor cercania al cliente.</p>
+              <p className="card-text">Posiblemente conseguirles un DS.</p>
+            </div>
+          </div>
 
-        <div>
-          <ul className="analytics-services-list">
-            <li>Todo lo anterior.</li>
-          </ul>
-          <ul className="analytics-services-list">
-            <li>Reuniones periódicas.</li>
-          </ul>
-          <ul className="analytics-services-list">
-            <li>Mayor cercanía al cliente.</li>
-          </ul>
-          <ul className="analytics-services-list">
-            <li>Posiblemente conseguirles un DS.</li>
-          </ul>
         </div>
       </section>
     </>
