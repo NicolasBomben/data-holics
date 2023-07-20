@@ -1,4 +1,3 @@
-
 import "./home.css";
 
 const Home = () => {
@@ -6,11 +5,7 @@ const Home = () => {
     <>
       <section className="home">
         <div className="home-box-1">
-          <h1 className="home-title">
-            Innovate technology
-            <br />
-            delivered.
-          </h1>
+          <h1 className="home-title">Innovate technology delivered</h1>
         </div>
 
         <div className="home-box-2">
@@ -75,19 +70,18 @@ const Home = () => {
         </div>
 
         <div className="home-box-5">
-            <h4 className="understand-title">Understand</h4>
-              <p className="understand-text">
-              We want to fully understand what are your business data needings,
-              your challenges, and your goals.
-              </p>
-            <h3 className="understand-title-secondary">We can support:</h3>
-            <div className="understand-items">
-              <div className="understand-item"></div>
-              <div className="understand-item"></div>
-              <div className="understand-item"></div>
-            </div>
+          <h4 className="understand-title">Understand</h4>
+          <p className="understand-text">
+            We want to fully understand what are your business data needings,
+            your challenges, and your goals.
+          </p>
+          <h3 className="understand-title-secondary">We can support:</h3>
+          <div className="understand-items">
+            <div className="understand-item"></div>
+            <div className="understand-item"></div>
+            <div className="understand-item"></div>
+          </div>
         </div>
-
       </section>
     </>
   );

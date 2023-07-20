@@ -4,6 +4,7 @@ const About = () => {
   return (
     <>
       <section className="about-container">
+
         <div className="home-box-1">
           <h1 className="services-title">About</h1>
         </div>
@@ -44,14 +45,18 @@ const About = () => {
           </div>
         </div>
 
-        <div className="about-box-2">
-          <div className="our-people">
-            <h2 className="title-box-2">Our People</h2>
+        <div className="about-us-container">
+          <h2 className="about-us-title">Our People</h2>
+          <div className="about-us-boxes">
+            <div className="about-us-item">
+
+            </div>
+            <div className="about-us-item">
+
+            </div>
+
           </div>
-          <div className="card-item-2">
-          </div>
-          <div className="card-item-2">
-          </div>
+
         </div>
 
           

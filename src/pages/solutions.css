@@ -1,46 +1,72 @@
-.solutions-main{
+.solutions-container{
     width: 100vw;
-    height: 200px;
+}
+
+.solutions-title{
+    height: 400px;
     background: #F4F4F4;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-.solutions-main-text{
-    font-weight: 300;
-    font-size: 36px;
+.solutions-text{
+    font-weight: 400;
+    font-size: 2rem;
+    padding-top: 5rem;
+    text-decoration-line: underline;
+    text-decoration-color: #E85241;
 }
 
-.solutions-secondary{
-    height: 200px;
-    padding-top: 4rem;
+.solutions-second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    padding-top: 2rem;
 }
 
-.secondary-text{
-    font-weight: 300;
-    font-size: 20px;
-    text-align: center;
+.second-text{
+    font-size: 2rem;
+    font-weight: 400;
 }
 
-.solutions-container{
-   
+.arrow{
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    border: 1px;
+    color: #E85241;
 }
 
-.solutions-box{
-
+.solutions-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 600px;
+    gap: 2rem;
 }
 
-.box-text{
-
-}
-
-.box-img{
-    width: 260px;
+.solutions-card-box{
+    width: 300px;
     height: 300px;
     background: #E85241;
 }
 
-.box-list{
-    
+
+.solutions-card-text{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.card-pricing{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #E85241;
+}
+
+.box-item{
+    padding-top: 0.5rem;
 }

@@ -10,23 +10,23 @@ const Navbar = () => {
         <header className="header">
             <img  className="logo"src={ logoData } alt="logo holics"></img>
             <nav>
-            <ul>
-                <li>
+            <ul className='ul-nav'>
+                <li className='li-nav'>
                     <Link to="/">Home</Link>
                 </li>
-                <li>
+                <li className='li-nav'>
                     <Link to="/services">Services</Link>
                 </li>
-                <li>
+                <li className='li-nav'>
                     <Link to ="/about">About</Link>
                 </li>
-                <li>
+                <li className='li-nav'>
                     <Link to="/careers">Careers</Link>
                 </li>
-                <li>
+                <li className='li-nav'>
                     <Link to="/contact">Contact</Link>
                 </li>
-                <li>
+                <li className='li-nav'>
                     <Link to="/solutions">Solutions</Link>
                 </li>
             </ul>
