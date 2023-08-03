@@ -1,41 +1,75 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import  logoData from '../assets/logoData.png';
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import Logo from "../assets/logoData.png";
+import Menu from "../assets/menu.png";
 
-import "./navbar.css"
+import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
+  //adding the states
+  const [isActive, setIsActive] = useState(false);
 
-    return(
-        <header className="header">
-            <img  className="logo"src={ logoData } alt="logo holics"></img>
-            <nav>
-            <ul className='ul-nav'>
-                <li className='li-nav'>
-                    <Link to="/">Home</Link>
-                </li>
-                <li className='li-nav'>
-                    <Link to="/services">Services</Link>
-                </li>
-                <li className='li-nav'>
-                    <Link to ="/about">About</Link>
-                </li>
-                <li className='li-nav'>
-                    <Link to="/careers">Careers</Link>
-                </li>
-                <li className='li-nav'>
-                    <Link to="/contact">Contact</Link>
-                </li>
-                <li className='li-nav'>
-                    <Link to="/solutions">Solutions</Link>
-                </li>
-            </ul>
-        </nav>
+  //add the active class
+  const toggleActiveClass = () => {
+    setIsActive(!isActive);
+  };
 
-        </header>
-        
-    )
+  //function to clean up de acitveClass
+  const removeActive = () => {
+    setIsActive(false);
+  };
 
-}
+  //navBarComponent
+  return (
+    <header className={`${styles.header}`}>
+      <nav className={`${styles.navbar}`}>
+        {/* logo */}
+        <img src={Logo} alt="logo-data" className={`${styles.logo}`}></img>
+
+        <ul className={`${styles.navMenu} ${isActive ? styles.active : ""}`}>
+          <li onClick={removeActive}>
+            <Link to="/" className={`${styles.navLink}`}>
+              Home
+            </Link>
+          </li>
+          <li onClick={removeActive}>
+            <Link to="/services" className={`${styles.navLink}`}>
+              Services
+            </Link>
+          </li>
+          <li onClick={removeActive}>
+            <Link to="/about" className={`${styles.navLink}`}>
+              About
+            </Link>
+          </li>
+          <li onClick={removeActive}>
+            <Link to="/careers" className={`${styles.navLink}`}>
+              Careers
+            </Link>
+          </li>
+          <li onClick={removeActive}>
+            <Link to="/contact" className={`${styles.navLink}`}>
+              Contact
+            </Link>
+          </li>
+          <li onClick={removeActive}>
+            <Link to="/solutions" className={`${styles.navLink}`}>
+              Solutions
+            </Link>
+          </li>
+        </ul>
+
+        <div
+          className={`${styles.hamburger} ${isActive ? styles.active : ""}`}
+          onClick={toggleActiveClass}
+        >
+          <span className={`${styles.bar}`}></span>
+          <span className={`${styles.bar}`}></span>
+          <span className={`${styles.bar}`}></span>
+        </div>
+      </nav>
+    </header>
+  );
+};
 
 export default Navbar;
