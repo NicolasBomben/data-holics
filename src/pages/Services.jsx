@@ -1,46 +1,46 @@
-//style
-import "./services.css";
+
+import styles from "../styles/Services.module.css";
 
 const Services = () => {
   return (
     <>
-      <section className="services-container">
-        <div className="home-box-1">
-          <h1 className="services-title">Our Services</h1>
+      <section className={`${styles.servicesContainer}`}>
+        <div className={`${styles.homeBox1}`}>
+          <h1 className={`${styles.servicesTitle}`}>Our Services</h1>
         </div>
 
-        <div className="services-box">
+        <div className={`${styles.servicesBox}`}>
 
-          <div className="card">
-            <h2 className="card-title">Basic Analytics</h2>
-            <div className="card-cuadrado"></div>
-            <div className="card-content">
-              <p className="card-text">Reunion de diagnostico.</p>
-              <p className="card-text">Data review.</p>
-              <p className="card-text">Deliver.</p>
+          <div className={`${styles.card}`}>
+            <h2 className={`${styles.cardTitle}`}>Basic Analytics</h2>
+            <div className={`${styles.cardCuadrado}`}></div>
+            <div className={`${styles.cardContent}`}>
+              <p className={`${styles.cardText}`}>Reunion de diagnostico.</p>
+              <p className={`${styles.cardText}`}>Data review.</p>
+              <p className={`${styles.cardText}`}>Deliver.</p>
             </div>
           </div>
 
-          <div className="card">
-            <h2 className="card-title">Advanced Analytics</h2>
-            <div className="card-cuadrado"></div>
-            <div className="card-content">
-              <p className="card-text">Reunion de diagnostico.</p>
-              <p className="card-text">Data review.</p>
-              <p className="card-text">Deliver.</p>
-              <p className="card-text">Seguimiento continuo.</p>
-              <p className="card-text">Actualizacion de tabas.</p>
+          <div className={`${styles.card}`}>
+            <h2 className={`${styles.cardTitle}`}>Advanced Analytics</h2>
+            <div className={`${styles.cardCuadrado}`}></div>
+            <div className={`${styles.cardContent}`}>
+              <p className={`${styles.cardText}`}>Reunion de diagnostico.</p>
+              <p className={`${styles.cardText}`}>Data review.</p>
+              <p className={`${styles.cardText}`}>Deliver.</p>
+              <p className={`${styles.cardText}`}>Seguimiento continuo.</p>
+              <p className={`${styles.cardText}`}>Actualizacion de tabas.</p>
             </div>
           </div>
 
-          <div className="card">
-            <h2 className="card-title">Basic Analytics</h2>
-            <div className="card-cuadrado"></div>
-            <div className="card-content">
-              <p className="card-text">Todo lo anterior.</p>
-              <p className="card-text">Reuniones periodicas.</p>
-              <p className="card-text">Mayor cercania al cliente.</p>
-              <p className="card-text">Posiblemente conseguirles un DS.</p>
+          <div className={`${styles.card}`}>
+            <h2 className={`${styles.cardTitle}`}>Basic Analytics</h2>
+            <div className={`${styles.cardCuadrado}`}></div>
+            <div className={`${styles.cardContent}`}>
+              <p className={`${styles.cardText}`}>Todo lo anterior.</p>
+              <p className={`${styles.cardText}`}>Reuniones periodicas.</p>
+              <p className={`${styles.cardText}`}>Mayor cercania al cliente.</p>
+              <p className={`${styles.cardText}`}>Posiblemente conseguirles un DS.</p>
             </div>
           </div>
 

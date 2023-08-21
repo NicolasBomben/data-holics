@@ -1,18 +1,18 @@
-import "./about.css";
+import styles from "../styles/About.module.css";
 
 const About = () => {
   return (
     <>
-      <section className="about-container">
+      <section className={`${styles.aboutContainer}`}>
 
         <div className="home-box-1">
           <h1 className="services-title">About</h1>
         </div>
 
-        <div className="about-box">
-          <div className="card-about">
-            <h2 className="about-title">Mission</h2>
-            <p className="about-text">
+        <div className={`${styles.aboutBox}`}>
+          <div className={`${styles.cardAbout}`}>
+            <h2 className={`${styles.aboutTitle}`}>Mission</h2>
+            <p className={`${styles.aboutText}`}>
               Our mission is to help small businesses thrive by providing them
               with powerful data analytics tools and services that are
               affordable and easy to use. We believe that every small business
@@ -26,9 +26,9 @@ const About = () => {
             </p>
           </div>
 
-          <div className="card-about">
-            <h2 className="about-title">Vision</h2>
-            <p className="about-text">
+          <div className={`${styles.cardAbout}`}>
+            <h2 className={`${styles.aboutTitle}`}>Vision</h2>
+            <p className={`${styles.aboutText}`}>
               Our vision is to be the leading data analytics company for small
               businesses, known for our innovation, expertise, and commitment to
               helping our clients succeed. We see a future where every small
@@ -45,13 +45,13 @@ const About = () => {
           </div>
         </div>
 
-        <div className="about-us-container">
-          <h2 className="about-us-title">Our People</h2>
-          <div className="about-us-boxes">
-            <div className="about-us-item">
+        <div className={`${styles.aboutUsContainer}`}>
+          <h2 className={`${styles.aboutUsTitle}`}>Our People</h2>
+          <div className={`${styles.aboutUsBoxes}`}>
+            <div className={`${styles.aboutUsItem}`}>
 
             </div>
-            <div className="about-us-item">
+            <div className={`${styles.aboutUsItem}`}>
 
             </div>
 

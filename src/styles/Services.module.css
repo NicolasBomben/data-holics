@@ -1,4 +1,4 @@
-.services-container{
+.servicesContainer{
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -6,7 +6,7 @@
     flex-wrap: wrap;
 }
 
-.services-title{
+.servicesTitle{
     font-weight: 400;
     font-size: 2rem;
     padding-top: 5rem;
@@ -14,7 +14,7 @@
     text-decoration-color: #E85241;
 }
 
-.services-box{
+.servicesBox{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,21 +26,20 @@
     height: 600px;
 }
 
-.card-title{
+.cardTitle{
     font-size: 2rem;
     font-weight: 400;
     text-align: center;
     padding-bottom: 2rem;
 }
 
-.card-cuadrado{
+.cardCuadrado{
     width: 400px;
     height: 300px;
     background: #E85241;
     border-radius: 15px;
 }
 
-.card-content{
+.cardContent{
     padding-top: 1rem;
 }
-
