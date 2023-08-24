@@ -4,9 +4,8 @@ const About = () => {
   return (
     <>
       <section className={`${styles.aboutContainer}`}>
-
-        <div className="home-box-1">
-          <h1 className="services-title">About</h1>
+        <div className={`${styles.mainTitle}`}>
+          <h1 className={`${styles.mainTitleText}`}>About Us</h1>
         </div>
 
         <div className={`${styles.aboutBox}`}>
@@ -48,22 +47,10 @@ const About = () => {
         <div className={`${styles.aboutUsContainer}`}>
           <h2 className={`${styles.aboutUsTitle}`}>Our People</h2>
           <div className={`${styles.aboutUsBoxes}`}>
-            <div className={`${styles.aboutUsItem}`}>
-
-            </div>
-            <div className={`${styles.aboutUsItem}`}>
-
-            </div>
-
+            <div className={`${styles.aboutUsItem}`}></div>
+            <div className={`${styles.aboutUsItem}`}></div>
           </div>
-
         </div>
-
-          
-      
-
-      
-          
       </section>
     </>
   );

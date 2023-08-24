@@ -1,0 +1,9 @@
+{
+  "version": "0.0.0",
+  "name": "dataholics-app",
+  "dependencies": {
+    "react-dom": { "version": "18.2.0" },
+    "react-router-dom": { "version": "6.11.2" },
+    "react": { "version": "18.2.0" }
+  }
+}

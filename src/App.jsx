@@ -5,6 +5,7 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 
 
+
 //pages
 import Home from './pages/Home';
 import Services from './pages/Services';

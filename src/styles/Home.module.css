@@ -13,13 +13,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #F4F4F4;
 }
 
-.homeTitle{
-    font-weight: 600;
-    font-size: 3.2rem;
-    padding-top: 5rem;
+.homeMainTitle{
+    font-weight: 500;
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: #E56143;
 }
 
 .homeBox2{
@@ -148,9 +148,9 @@
     border-radius: 20px;
 }
 
-@media (min-width: 319px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 425px) {
 
-    .homeTitle{
+    .homeMainTitle{
         font-weight: 500;
         font-size: 1rem;
         text-align: center;
@@ -158,7 +158,7 @@
     }
 
     .homeBox1{
-        height: 95px;
+        height: 100px;
     }
 
     .homeTitleSecondary{

@@ -1,16 +1,15 @@
-import {home} from "../data/data.js";
+import { home } from "../data/data.js";
 import styles from "../styles/Home.module.css";
+import { Slide } from "react-awesome-reveal";
+import Animation from "../components/Animation.jsx";
 
 const Home = () => {
-
-  
   return (
     <>
       <section className={`${styles.home}`}>
-        <div className={`${styles.homeBox1}`}>
-          <h1 className={`${styles.homeTitle}`}>Innovate technology delivered</h1>
-        </div>
 
+        <Animation></Animation>
+        
         <div className={`${styles.homeBox2}`}>
           <h2 className={`${styles.homeTitleSecondary}`}>
             Empowering you with data intelligence
@@ -40,17 +39,19 @@ const Home = () => {
         </div>
 
         <div className={`${styles.homeBox4}`}>
-          {
-            home.map((home, index)=>{
-              return(
-                <div className={`${styles.homeItem}`} key={index}>
-                  <span className={`${styles.homeImg}`}></span>
-                  <h3 className={`${styles.homeTitle}`}>{home.title}</h3>
-                  <p className={`${styles.homeText}`}>{home.text}</p>
-                </div>
-              )
-            })
-          }
+          {home.map((home, index) => {
+            return (
+              <>
+                <Slide delay={1e2} cascade damping={1e-1}>
+                  <div className={`${styles.homeItem}`} key={index}>
+                    <span className={`${styles.homeImg}`}></span>
+                    <h3 className={`${styles.homeTitle}`}>{home.title}</h3>
+                    <p className={`${styles.homeText}`}>{home.text}</p>
+                  </div>
+                </Slide>
+              </>
+            );
+          })}
         </div>
 
         <div className={`${styles.homeBox5}`}>
@@ -59,7 +60,9 @@ const Home = () => {
             We want to fully understand what are your business data needings,
             your challenges, and your goals.
           </p>
-          <h3 className={`${styles.understandTitleSecondary}`}>We can support:</h3>
+          <h3 className={`${styles.understandTitleSecondary}`}>
+            We can support:
+          </h3>
           <div className={`${styles.understandItems}`}>
             <div className={`${styles.understandItem}`}></div>
             <div className={`${styles.understandItem}`}></div>

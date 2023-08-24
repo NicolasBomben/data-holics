@@ -5,8 +5,11 @@ const Services = () => {
   return (
     <>
       <section className={`${styles.servicesContainer}`}>
-        <div className={`${styles.homeBox1}`}>
-          <h1 className={`${styles.servicesTitle}`}>Our Services</h1>
+
+        <div className={`${styles.mainContainer}`}>
+          <h1 className={`${styles.servicesTitle}`}>
+              Our services
+          </h1>
         </div>
 
         <div className={`${styles.servicesBox}`}>
