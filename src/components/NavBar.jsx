@@ -21,14 +21,11 @@ const Navbar = () => {
   //navBarComponent
   return (
     <header className={`${styles.header}`}>
-      {/* logo */}
 
       <nav className={`${styles.navbar}`}>
-        <div>
+       
           <img src={Logo} alt="logo-data" className={`${styles.logo}`}></img>
-        </div>
-
-        <div className={`${styles.navMenuContainer}`}>
+       
           <ul className={`${styles.navMenu} ${isActive ? styles.active : ""}`}>
             <li onClick={removeActive}>
               <Link to="/" className={`${styles.navLink}`}>
@@ -61,8 +58,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-        </div>
-
+        
         <div
           className={`${styles.hamburger} ${isActive ? styles.active : ""}`}
           onClick={toggleActiveClass}

@@ -2,21 +2,21 @@ import { home } from "../data/data.js";
 import styles from "../styles/Home.module.css";
 import { Slide } from "react-awesome-reveal";
 import Animation from "../components/Animation.jsx";
+import Development from "../assets/developement.jpg";
+import Analytics from "../assets/analytics.jpg";
+import Management from "../assets/management.jpg";
 
 const Home = () => {
   return (
     <>
       <section className={`${styles.home}`}>
 
-        <Animation></Animation>
-        
-        <div className={`${styles.homeBox2}`}>
+        <Animation/>
+
+        <div className={`${styles.homeBox3}`}>
           <h2 className={`${styles.homeTitleSecondary}`}>
             Empowering you with data intelligence
           </h2>
-        </div>
-
-        <div className={`${styles.homeBox3}`}>
           <p className={`${styles.homeText3}`}>
             As a small or medium-sized business owner, you know adapting quickly
             to changing market conditions is essential for success. That`s where
@@ -64,9 +64,18 @@ const Home = () => {
             We can support:
           </h3>
           <div className={`${styles.understandItems}`}>
-            <div className={`${styles.understandItem}`}></div>
-            <div className={`${styles.understandItem}`}></div>
-            <div className={`${styles.understandItem}`}></div>
+            <div className={`${styles.understandItem}`}>
+              <h3 className={`${styles.supportText}`}>Development</h3>
+              <img src={Development} alt="developement-picture"/>
+            </div>
+            <div className={`${styles.understandItem}`}>
+              <h3 className={`${styles.supportText}`}>Data and Analytics</h3>
+              <img src={Analytics} alt="analytics-picture"/>
+            </div>
+            <div className={`${styles.understandItem}`}>
+              <h3 className={`${styles.supportText}`}>Project Management</h3>
+              <img src={Management} alt="analytics-picture"/>
+            </div>
           </div>
         </div>
       </section>

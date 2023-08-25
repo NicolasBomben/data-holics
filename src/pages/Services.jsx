@@ -1,4 +1,4 @@
-
+import { services } from "../data/data";
 import styles from "../styles/Services.module.css";
 
 const Services = () => {
@@ -12,42 +12,31 @@ const Services = () => {
           </h1>
         </div>
 
-        <div className={`${styles.servicesBox}`}>
+        <div className={`${styles.servicesCardContainer}`}>
+          {services.map((services, index)=> {
+            return(
+              <>
+                <div className={`${styles.cardContent}`}key={index}>
+                    <span className={`${styles.cardTitle}`}>
+                      {services.title}
+                    </span>
+                    <div className={`${styles.cardImage}`}>
 
-          <div className={`${styles.card}`}>
-            <h2 className={`${styles.cardTitle}`}>Basic Analytics</h2>
-            <div className={`${styles.cardCuadrado}`}></div>
-            <div className={`${styles.cardContent}`}>
-              <p className={`${styles.cardText}`}>Reunion de diagnostico.</p>
-              <p className={`${styles.cardText}`}>Data review.</p>
-              <p className={`${styles.cardText}`}>Deliver.</p>
-            </div>
-          </div>
+                    </div>
+                    <span className={`${styles.cardText}`}>
+                      {services.text}
+                    </span>
+                  </div>
 
-          <div className={`${styles.card}`}>
-            <h2 className={`${styles.cardTitle}`}>Advanced Analytics</h2>
-            <div className={`${styles.cardCuadrado}`}></div>
-            <div className={`${styles.cardContent}`}>
-              <p className={`${styles.cardText}`}>Reunion de diagnostico.</p>
-              <p className={`${styles.cardText}`}>Data review.</p>
-              <p className={`${styles.cardText}`}>Deliver.</p>
-              <p className={`${styles.cardText}`}>Seguimiento continuo.</p>
-              <p className={`${styles.cardText}`}>Actualizacion de tabas.</p>
-            </div>
-          </div>
+              </>
+            )
 
-          <div className={`${styles.card}`}>
-            <h2 className={`${styles.cardTitle}`}>Basic Analytics</h2>
-            <div className={`${styles.cardCuadrado}`}></div>
-            <div className={`${styles.cardContent}`}>
-              <p className={`${styles.cardText}`}>Todo lo anterior.</p>
-              <p className={`${styles.cardText}`}>Reuniones periodicas.</p>
-              <p className={`${styles.cardText}`}>Mayor cercania al cliente.</p>
-              <p className={`${styles.cardText}`}>Posiblemente conseguirles un DS.</p>
-            </div>
-          </div>
+          })
 
+          }
         </div>
+
+       
       </section>
     </>
   );

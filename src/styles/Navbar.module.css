@@ -1,43 +1,39 @@
 /* navbar */
 
-.header{
-    width: 100vw;
+.header {
+  width: 100vw;
+  display: flex;
 }
 
 .navbar {
+  width: 100vw;
+  height: 100px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  height: 80px;
-  overflow-y: hidden;
+  gap: 10rem;
 }
+
 .navLink {
   list-style: none;
   text-decoration: none;
   color: black;
-  font-size: 1.25em;
-  font-weight: 300;
-  
+  font-size: 1.5rem;
+  font-weight: 200;
 }
-.navLink:hover{
-    color: #E85241;
+.navLink:hover {
+  font-weight: 400;
+  color: #e85241;
+  text-decoration-color: #213d76;
+  text-decoration-line: underline;
 }
-
-/* logo  */
-.logo {
-  padding-left: 100px;
-}
-
 /* ul  */
 .navMenu {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 80vw;
-  gap: 20px;
+  justify-content: center;
+  gap: 2rem;
 }
-
 /* media queries */
-
 @media screen and (max-width: 780px) {
   /* hamburger */
   .hamburger {
@@ -46,11 +42,11 @@
   }
 
   .bar {
-    background-color: #E56143;
+    background-color: black;
     width: 40px;
-    height: 3px;
+    height: 4px;
     display: block;
-    margin: 5px;
+    margin: 8px;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
@@ -66,42 +62,58 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .navbar{
+  .navbar {
     gap: 10px;
   }
 
-/* navMenu */
+  /* navMenu */
   .navMenu {
     position: absolute;
     flex-direction: column;
     gap: 0;
     top: 70px;
-    left: -100%;
+    left: -80%;
     text-align: left;
     width: 80%;
+    height: 370px;
     transition: 0.7s ease-in-out;
     background-color: white;
-    padding: 10px;
+    padding: 5px;
     z-index: 3;
+   
   }
 
   .navMenu.active {
     left: 0;
+    opacity: 0.8;
   }
 
   .navMenu li {
-    margin: 16px 0;
+    margin: 10px;
+  }
+  .navLink{
+    font-weight: 300;
+    text-decoration: underline;
+    text-decoration-color: #E85241;
+  }
+  .navLink:hover {
+    color: #e85241;
+  }
+}
+
+@media (min-width: 319px) and (max-width: 425px) {
+  .header {
+    min-width: 320px;
+    max-width: 425px;
+  }
+  .navbar {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 6rem;
   }
 
-  .navLink:hover{
-    color: #E85241;
 }
-
-}
-
-@media (min-width: 319px) and (max-width: 425px){
-
-  
-}
-
-
