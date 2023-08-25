@@ -13,15 +13,14 @@ const Animation = () => {
           el: myRef.current,
           mouseControls: true,
           touchControls: true,
-          gyroControls: false,
-          minHeight: 200.0,
+          gyroControls: true,
+          minHeight: 400.0,
           minWidth: 200.0,
           scale: 1.0,
           scaleMobile: 1.0,
-          backgroundColor: 0xc0c0c,
-          color: 0xb35320,
-          points: 13.0,
-          maxDistance: 17.0,
+          color: 0x0,
+          backgroundColor: 0xf7f7f7,
+          points: 20.0,
         })
       );
     }
@@ -32,7 +31,9 @@ const Animation = () => {
 
   return (
     <div className={`${styles.homeBox1}`} ref={myRef}>
-      <h1 className={`${styles.homeMainTitle}`}>Innovate technology delivered</h1>
+      <h1 className={`${styles.homeMainTitle}`}>
+        Innovate technology delivered
+      </h1>
     </div>
   );
 };

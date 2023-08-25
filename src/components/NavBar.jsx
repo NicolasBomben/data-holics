@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/image 1logo resp.svg";
 
-
 import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
@@ -22,42 +21,47 @@ const Navbar = () => {
   //navBarComponent
   return (
     <header className={`${styles.header}`}>
-      <nav className={`${styles.navbar}`}>
-        {/* logo */}
-        <img src={Logo} alt="logo-data" className={`${styles.logo}`}></img>
+      {/* logo */}
 
-        <ul className={`${styles.navMenu} ${isActive ? styles.active : ""}`}>
-          <li onClick={removeActive}>
-            <Link to="/" className={`${styles.navLink}`}>
-              Home
-            </Link>
-          </li>
-          <li onClick={removeActive}>
-            <Link to="/services" className={`${styles.navLink}`}>
-              Services
-            </Link>
-          </li>
-          <li onClick={removeActive}>
-            <Link to="/about" className={`${styles.navLink}`}>
-              About
-            </Link>
-          </li>
-          <li onClick={removeActive}>
-            <Link to="/careers" className={`${styles.navLink}`}>
-              Careers
-            </Link>
-          </li>
-          <li onClick={removeActive}>
-            <Link to="/contact" className={`${styles.navLink}`}>
-              Contact
-            </Link>
-          </li>
-          <li onClick={removeActive}>
-            <Link to="/solutions" className={`${styles.navLink}`}>
-              Solutions
-            </Link>
-          </li>
-        </ul>
+      <nav className={`${styles.navbar}`}>
+        <div>
+          <img src={Logo} alt="logo-data" className={`${styles.logo}`}></img>
+        </div>
+
+        <div className={`${styles.navMenuContainer}`}>
+          <ul className={`${styles.navMenu} ${isActive ? styles.active : ""}`}>
+            <li onClick={removeActive}>
+              <Link to="/" className={`${styles.navLink}`}>
+                Home
+              </Link>
+            </li>
+            <li onClick={removeActive}>
+              <Link to="/services" className={`${styles.navLink}`}>
+                Services
+              </Link>
+            </li>
+            <li onClick={removeActive}>
+              <Link to="/about" className={`${styles.navLink}`}>
+                About
+              </Link>
+            </li>
+            <li onClick={removeActive}>
+              <Link to="/careers" className={`${styles.navLink}`}>
+                Careers
+              </Link>
+            </li>
+            <li onClick={removeActive}>
+              <Link to="/contact" className={`${styles.navLink}`}>
+                Contact
+              </Link>
+            </li>
+            <li onClick={removeActive}>
+              <Link to="/solutions" className={`${styles.navLink}`}>
+                Solutions
+              </Link>
+            </li>
+          </ul>
+        </div>
 
         <div
           className={`${styles.hamburger} ${isActive ? styles.active : ""}`}
