@@ -175,15 +175,15 @@
     }
     .homeBox4{
         flex-direction: column;
-        height: 800px;
+        height: 700px;
         gap: 1rem;
     }
     .homeItem{
         padding-top: 1rem;
-        width: 280px;
+        width: 300px;
         height: 150px;
         background: #FFFFFF;
-        border-radius: none;
+        border-radius: 10px;
     }
 
     .homeImg{
@@ -193,14 +193,15 @@
     }
     
     .homeTitle{
-        font-size: 12px;
+        font-size: 1rem;
         font-weight: 600;
         padding-top: 1px;
     }
     
     .homeText{
-        font-size: 10px;
-        font-weight: 400;
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: center;
         padding-top: 0.5rem;
     }
     .homeBox5{
