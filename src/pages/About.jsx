@@ -1,14 +1,15 @@
+import { people } from "../data/data";
 import styles from "../styles/About.module.css";
 
 const About = () => {
   return (
     <>
       <section className={`${styles.aboutContainer}`}>
-        <div className={`${styles.mainTitle}`}>
-          <h1 className={`${styles.mainTitleText}`}>About Us</h1>
+        <div className={`${styles.aboutMainContainer}`}>
+          <h1 className={`${styles.aboutMainTitle}`}>About Us</h1>
         </div>
 
-        <div className={`${styles.aboutBox}`}>
+        <div className={`${styles.aboutUsContainer}`}>
           <div className={`${styles.cardAbout}`}>
             <h2 className={`${styles.aboutTitle}`}>Mission</h2>
             <p className={`${styles.aboutText}`}>
@@ -23,9 +24,6 @@ const About = () => {
               clients, so they can achieve their business goals and compete in
               today data-driven economy.
             </p>
-          </div>
-
-          <div className={`${styles.cardAbout}`}>
             <h2 className={`${styles.aboutTitle}`}>Vision</h2>
             <p className={`${styles.aboutText}`}>
               Our vision is to be the leading data analytics company for small
@@ -44,12 +42,23 @@ const About = () => {
           </div>
         </div>
 
-        <div className={`${styles.aboutUsContainer}`}>
-          <h2 className={`${styles.aboutUsTitle}`}>Our People</h2>
-          <div className={`${styles.aboutUsBoxes}`}>
-            <div className={`${styles.aboutUsItem}`}></div>
-            <div className={`${styles.aboutUsItem}`}></div>
-          </div>
+        <div className={`${styles.peopleContainer}`}>
+          {people.map((people, index) => {
+            return (
+              <>
+                <div className={`${styles.peopleContent}`} key={index}>
+                  <div className={`${styles.peopleImage}`}>
+                    <img src="" alt="" />
+                  </div>
+                  <h3 className={`${styles.peopleTitle}`}>{people.title}</h3>
+                  <p className={`${styles.peopleText}`}>{people.text}</p>
+                  <p className={`${styles.peoplePhone}`}>{people.telefono}</p>
+                  <p className={`${styles.peopleEmail}`}>{people.mail}</p>
+                  <span className={`${styles.peopleLinkedIn}`}>LinkedInd</span>
+                </div>
+              </>
+            );
+          })}
         </div>
       </section>
     </>
