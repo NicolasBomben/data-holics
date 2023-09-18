@@ -13,12 +13,29 @@
     border-width: 0 0 0.20rem 0;
     border-color: #E85241;
 }
+.servicesTitleSecondary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.servicesTitleSpan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 400;
+    padding-top: 1rem;
+}
 .servicesCardContainer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
-    gap: 2rem;
+    flex-direction: row;
+    height: 800px;
+    width: 100%;
 }
 .cardContent{
     display: flex;
@@ -57,47 +74,43 @@
     color: #F4F4F4;
 }
 
-/*media querys*/
-@media (min-width: 320px) and (max-width: 425px){
-    .servicesTitleContainer{
-        height: 130px;
-    }
-    .servicesTitle{
-        font-size: 2rem;
+/*laptop responsive*/
+@media (min-width: 1000px) and (max-width : 1024px){
+
+    .servicesTitleSpan{
+        text-align: center;
     }
     .servicesCardContainer{
-        display: flex;
-        flex-direction: column;
-        height: 1300px;
-        gap: 1rem;
-        padding-top: 1rem;
+        gap: 4px;
     }
     .cardContent{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 300px;
-        height:400px;
+        width: 400px;
+        height: 600px;
     }
-    .cardTitle{
+    cardImage{
+        height: 250px;
+        width: 250px;
+    }
+}
+/*mobile respnsive*/
+@media (min-width: 320px) and (max-width: 425px){
+
+    .servicesTitleSecondary, .servicesTitleSpan{
         font-size: 1rem;
-        font-weight: 600;
+        text-align: center;
     }
+    
+    .servicesCardContainer{
+        flex-direction: column;
+        height: 1400px;
+    }
+
     .cardImage{
         background-color: red;
         height: 300px;
         width: 300px;
     }
-    .cardButton{
-        font-size: 12px;
-        font-weight: 400;
-    }
 
-
-
-
-
-
-    
-
+   
 }
+

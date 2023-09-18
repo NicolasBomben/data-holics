@@ -11,7 +11,6 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import About from './pages/About';
 import Careers from './pages/Careers';
-import Solutions from './pages/Solutions';
 import Contact from './pages/Contact';
 
 //styles
@@ -27,7 +26,6 @@ function App() {
       <Route path="about" element={ <About/> }/>
       <Route path="careers" element={ <Careers/> }/>
       <Route path="contact" element={ <Contact/> }/>
-      <Route path="solutions" element={ <Solutions/> }/>
     </Routes>
     <Footer/>
     </>

@@ -1,6 +1,6 @@
 
 export const home = [
-    {
+    {   
         "img": "",
         "title": "CHALLENGE",
         "text": "We take the time to really understand your challenges and your goals."
@@ -23,17 +23,20 @@ export const home = [
 ]
 
 export const services = [
-    {
-        "title":"Basic Analytics",
-        "text":"Diagnostic meetings, data review and deliver."
+    {   id : 1,
+        services_id : 1,        
+        title:"Basic Analytics",
+        text:"Diagnostic meetings, data review and deliver."
     },
-    {
-        "title":"Advanced Analytics",
-        "text":"Basic. Continuous monitoring. Table update."
+    {   id : 2,
+        services_id: 2,
+        title:"Advanced Analytics",
+        text:"Basic. Continuous monitoring. Table update."
     },
-    {
-        "title":"Full Analytics",
-        "text":"Basic and advanced. Periodics meetings. Clouser to the costumer. "
+    {   id : 3,
+        services_id: 3,
+        title:"Full Analytics",
+        text:"Basic and advanced. Periodics meetings. Clouser to the costumer. "
     }
 ]
 export const people = [

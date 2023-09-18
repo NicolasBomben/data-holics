@@ -139,8 +139,33 @@
     color: #E56143;
     position: absolute;
 }
+/*laptop responsive*/
+@media (min-width: 1000px) and (max-width : 1024px) {
+    .homeBox3{
+        height: 600px;
+    }
+    .homeBox4{
+        gap: 4px;
+    }
+    .homeItem{
+        width: 250px;
+        height: 400px;
+    }
+    .understandTitle{
+        left: 6%;
+        padding-top: 2rem;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .understandText{
+        left: 6%;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
 
 
+/*mobile responsive*/
 @media (min-width: 320px) and (max-width: 425px) {
 
     .home{

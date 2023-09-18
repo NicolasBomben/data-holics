@@ -52,11 +52,6 @@ const Navbar = () => {
                 Contact
               </Link>
             </li>
-            <li onClick={removeActive}>
-              <Link to="/solutions" className={`${styles.navLink}`}>
-                Solutions
-              </Link>
-            </li>
           </ul>
         
         <div
