@@ -34,9 +34,9 @@ const Animation = () => {
     <div className={`${styles.homeBox1}`} ref={myRef}>
       <Slide  direction={"down"} delay={1e1} cascade damping={1e-1}>
       <h1 className={`${styles.homeMainTitle}`}>
-        Innovate technology
+        Data revolution,
         <br/>
-        <span className={`${styles.textQuaternary}`}>delivered</span>
+        <span className={`${styles.textQuaternary}`}>simplified.</span>
       </h1>
       </Slide>
     </div>

@@ -1,18 +1,25 @@
 /* navbar */
 
-.header {
-  width: 100vw;
-  display: flex;
-}
-
 .navbar {
   width: 100vw;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10rem;
+  height: 90px;
+  position: fixed;
+  z-index: 100;
+  background-color: #FFFFFF;
+  box-shadow: 0 5px 5px #F6F6F6;
 }
+
+
+
+.navBox, .navMenu{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 100px;
+  gap: 2rem;
+}
+
+
 
 .navLink {
   list-style: none;
@@ -27,12 +34,7 @@
   text-decoration-color: #213d76;
   text-decoration-line: underline;
 }
-/* ul  */
-.navMenu {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
+
 /* media queries */
 @media screen and (max-width: 780px) {
   /* hamburger */
@@ -68,12 +70,12 @@
 
   /* navMenu */
   .navMenu {
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     gap: 0;
     top: 70px;
-    left: -80%;
-    text-align: left;
+    left: -60%;
+    text-align: center;
     width: 80%;
     height: 370px;
     transition: 0.7s ease-in-out;

@@ -1,7 +1,25 @@
-import { people } from "../data/data";
+//styles
 import styles from "../styles/About.module.css";
 
 const About = () => {
+
+  const dataAbout = [
+    {
+      id: 1,
+      title: "Rodrigo Senabre",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat nibh nisl, sodales elementum augue rutrum at. Vivamus laoreet urna ac quam porttitor, vel scelerisque sapien sagittis. Duis non pharetra nisi. Suspendisse fermentum nisi vitae ligula feugiat, sit amet volutpat odio venenatis. Nulla ultrices lectus risus, eget faucibus leo semper sed. Vivamus tincidunt vitae urna non pellentesque. Aenean odio sem, porttitor eu tortor ac, malesuada eleifend elit. Etiam laoreet finibus tellus id vulputate. Cras nibh tortor, lobortis quis mollis vel, tempor commodo risus. Etiam dignissim mauris ac tortor consequat semper rutrum ac magna. Donec ac leo ultrices, aliquet massa et, viverra mi. Vivamus finibus posuere ultricies. Cras lobortis pellentesque tortor nec egestas. Quisque blandit tempus lacus, eu fringilla sem sagittis sit amet. Nam eget euismod neque. Morbi vel eros condimentum, laoreet sem eget, volutpat arcu.",
+      telefono: "11454524232",
+      mail: "rodrigo@algo.com.ar",
+    },
+    {
+      id: 2,
+      title: "Martin Urtubey",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam placerat nibh nisl, sodales elementum augue rutrum at. Vivamus laoreet urna ac quam porttitor, vel scelerisque sapien sagittis. Duis non pharetra nisi. Suspendisse fermentum nisi vitae ligula feugiat, sit amet volutpat odio venenatis. Nulla ultrices lectus risus, eget faucibus leo semper sed. Vivamus tincidunt vitae urna non pellentesque. Aenean odio sem, porttitor eu tortor ac, malesuada eleifend elit. Etiam laoreet finibus tellus id vulputate. Cras nibh tortor, lobortis quis mollis vel, tempor commodo risus. Etiam dignissim mauris ac tortor consequat semper rutrum ac magna. Donec ac leo ultrices, aliquet massa et, viverra mi. Vivamus finibus posuere ultricies. Cras lobortis pellentesque tortor nec egestas. Quisque blandit tempus lacus, eu fringilla sem sagittis sit amet. Nam eget euismod neque. Morbi vel eros condimentum, laoreet sem eget, volutpat arcu.",
+      telefono: "11454524232",
+      mail: "martin@algo.com.ar",
+    },
+  ];
+
   return (
     <>
       <section className={`${styles.aboutContainer}`}>
@@ -43,17 +61,17 @@ const About = () => {
         </div>
 
         <div className={`${styles.peopleContainer}`}>
-          {people.map((people, index) => {
+          {dataAbout.map( dataAbout => {
             return (
               <>
-                <div className={`${styles.peopleContent}`} key={index}>
+                <div className={`${styles.peopleContent}`} key={dataAbout.id}>
                   <div className={`${styles.peopleImage}`}>
                     <img src="" alt="" />
                   </div>
-                  <h3 className={`${styles.peopleTitle}`}>{people.title}</h3>
-                  <p className={`${styles.peopleText}`}>{people.text}</p>
-                  <p className={`${styles.peoplePhone}`}>{people.telefono}</p>
-                  <p className={`${styles.peopleEmail}`}>{people.mail}</p>
+                  <h3 className={`${styles.peopleTitle}`}>{dataAbout.title}</h3>
+                  <p className={`${styles.peopleText}`}>{dataAbout.text}</p>
+                  <p className={`${styles.peoplePhone}`}>{dataAbout.telefono}</p>
+                  <p className={`${styles.peopleEmail}`}>{dataAbout.mail}</p>
                   <span className={`${styles.peopleLinkedIn}`}>LinkedInd</span>
                 </div>
               </>

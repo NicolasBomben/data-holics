@@ -3,6 +3,10 @@ import { useState } from "react";
 import ModalBasics from "../components/Modals/ModalBasics";
 import ModalAdvanced from "../components/Modals/ModalAdvanced";
 import ModalFull from "../components/Modals/ModalFull";
+//assets
+import ServicesOne from "../assets/services1.jpg";
+import ServicesTwo from "../assets/services2.jpg";
+import ServicesThree from "../assets/services6.jpg";
 //style
 import styles from "../styles/Services.module.css";
 
@@ -40,7 +44,9 @@ const Services = () => {
       <div className={styles.servicesCardContainer}>
         <div className={styles.cardContent}>
           <h3 className={styles.cardTitle}>Basics Analytics</h3>
-          <div className={styles.cardImage}>Falta imagen</div>
+          <div className={styles.cardImage}>
+            <img src={ServicesOne} alt="basics-analytics" className={styles.imgServices}/>
+          </div>
           <button onClick={openModal} className={styles.cardButton} >Know More</button>
           {showModal && <ModalBasics setShowModal={setShowModal}/>}
         </div>
@@ -48,7 +54,9 @@ const Services = () => {
          {/*Advanced*/}
          <div className={styles.cardContent}>
           <h3 className={styles.cardTitle}>Advanced Analytics</h3>
-          <div className={styles.cardImage}>Falta imagen</div>
+          <div className={styles.cardImage}>
+            <img src={ServicesTwo} alt="advanced-analytics" className={styles.imgServices}/>
+          </div>
           <button onClick={openModalAdvanced} className={styles.cardButton} >Know More</button>
           {showModalAdvanced && <ModalAdvanced setShowModalAdvanced={setShowModalAdvanced}/>}
         </div>
@@ -56,7 +64,9 @@ const Services = () => {
         {/*Full*/}
         <div className={styles.cardContent}>
           <h3 className={styles.cardTitle}>Full Analytics</h3>
-          <div className={styles.cardImage}>Falta imagen</div>
+          <div className={styles.cardImage}>
+            <img src={ServicesThree} alt="full-analytics" className={styles.imgServices}/>
+          </div>
           <button onClick={openModalFull} className={styles.cardButton} >Know More</button>
           {showModalFull && <ModalFull setShowModalFull={setShowModalFull}/>}
         </div>
