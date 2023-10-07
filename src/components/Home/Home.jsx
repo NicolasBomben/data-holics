@@ -1,18 +1,16 @@
-
 //styles
 import "./home.css";
+import "./homeQuerys.css";
 
 //animations
 import { Slide } from "react-awesome-reveal";
 import Animation from "./Animation.jsx";
 //assets
-import Development from "../../assets/developement.jpg";
-import Analytics from "../../assets/analytics.jpg";
-import Management from "../../assets/management.jpg";
-
+import Development from "../../assets/services1.jpg";
+import Analytics from "../../assets/services3.jpg";
+import Management from "../../assets/services6.jpg";
 
 const Home = () => {
-
   //data
   const dataHome = [
     {
@@ -43,20 +41,18 @@ const Home = () => {
 
   return (
     <>
-      <section className="home">
+      <section className="home-section">
         <Animation />
 
-        <div className="homeBox3">
-          <h2 className="homeTitleSecondary">
-            Empowering you with AI.
-          </h2>
-          <p className="homeText3">
+        <div className="container-text">
+          <h2 className="home-title">Empowering you with AI.</h2>
+          <p className="home-text">
             As a small or medium-sized business owner, navigating rapidly
             changing market conditions can be challenging. That's where{" "}
             <b>Dataholics</b> comes in your partner in agile business
             transformation.
           </p>
-          <p className="homeText3">
+          <p className="home-text">
             At Dataholics, we're not just experts;{" "}
             <b>we're your productivity catalysts.</b> Utilizing advanced Machine
             Learning algorithms, we automate time-draining tasks like data entry
@@ -65,7 +61,7 @@ const Home = () => {
             decision-making process, ensuring it's both efficient and backed by
             data-driven insights.
           </p>
-          <p className="homeText3">
+          <p className="home-text">
             Why settle for keeping up with the competition when you can stay
             ahead? Collaborate with us to create custom technology solutions
             that not only drive your profits but also give you a competitive
@@ -76,42 +72,56 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="homeBox4">
-          {dataHome.map( (dataHome)=> {
-            return (            
-                <Slide delay={1e2} cascade damping={1e-1} key={dataHome.id}>
-                  <div className="homeItem">
-                    <img className="homeImg" src={dataHome.img} alt="home-imagenes"/>
-                    <h3 className="homeTitle">{dataHome.title}</h3>
-                    <p className="homeText">{dataHome.text}</p>
-                  </div>
-                </Slide>    
+        <div className="card-tools-container">
+          {dataHome.map((dataHome) => {
+            return (
+              <Slide delay={1e2} cascade damping={1e-1} key={dataHome.id}>
+                <div className="card-tools-body">
+                  <img
+                    className="card-tools-img"
+                    src={dataHome.img}
+                    alt="home-imagenes"
+                  />
+                  <h3 className="card-tools-title">{dataHome.title}</h3>
+                  <p className="card-tools-text">{dataHome.text}</p>
+                </div>
+              </Slide>
             );
           })}
         </div>
 
-        <div className="homeBox5">
-          <h4 className="understandTitle">Understand</h4>
-          <p className="understandText">
-            We want to fully understand what are your business data needings,
-            your challenges, and your goals.
-          </p>
-          <h3 className="understandTitleSecondary">
-            We can support:
-          </h3>
-          <div className="understandItems">
-            <div className="understandItem">
-              <h3 className="supportText">Development</h3>
-              <img src={Development} alt="developement-picture" />
+        <div className="container-supports">
+          <div className="box-title-support">
+            <h2 className="title-support">Understand</h2>
+            <p className="text-support">
+              We want to fully understand what are your business data needings,
+              your challenges, and your goals.
+            </p>
+            <h2 className="title-support">We can support:</h2>
+          </div>
+
+          <div className="container-supports-imgs">
+            <div className="box-supports">
+              <h3 className="title-supports">Development</h3>
+              
+                <img className="img-supports" src={Development} alt="" />
+              
             </div>
-            <div className="understandItem">
-              <h3 className="supportText">Data and Analytics</h3>
-              <img src={Analytics} alt="analytics-picture" />
+
+            <div className="box-supports">
+              <h3 className="title-supports">Analytics</h3>
+              
+                <img className="img-supports" src={Analytics} alt="" />
+              
             </div>
-            <div className="understandItem">
-              <h3 className="supportText">Project Management</h3>
-              <img src={Management} alt="analytics-picture" />
+
+            <div className="box-supports">
+              <h3 className="title-supports">Managment</h3>
+             
+                <img className="img-supports"src={Management} alt="" />
+              
             </div>
+
           </div>
         </div>
       </section>

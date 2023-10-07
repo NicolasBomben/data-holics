@@ -19,6 +19,7 @@ const NavBar = () => {
   return (
     <header className="header">
       {/*<img className="img-logo" src={logo} alt="data-holics-logo" />*/}
+
       <nav ref={navRef} className={isOpen ? "responsive_nav" : ""}>
         <Link className="nav-links" to="/" onClick={closeNavbar}>
           Home
