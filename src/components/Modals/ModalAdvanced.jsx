@@ -1,5 +1,5 @@
 
-import styles from "../../styles/Modal.module.css";
+import "./modal.css";
 
 const ModalAdvanced = ({setShowModalAdvanced}) => {
 
@@ -8,23 +8,23 @@ const ModalAdvanced = ({setShowModalAdvanced}) => {
   }
 
   return (
-    <div className={`${styles.modal}`}>
-    <div className={`${styles.modalContent}`}>
-      <div className={`${styles.modalHeader}`}>
-        <h4 className={`${styles.modalTitle}`}>Advanced Analytics</h4>
+    <div className="modal">
+    <div className="modal-content">
+      <div className="modal-header">
+        <h4 className="modal-title">Advanced Analytics</h4>
       </div>
-      <div className={`${styles.modalBody}`}>
-        <ul className={styles.bodyList}>
-          <li className={styles.listItems}>All included in Basic Analytics package</li>
-          <li className={styles.listItems}>Personalized insights for your business</li>
-          <li className={styles.listItems}>Usin IA</li>
-          <li className={styles.listItems}>Untapped opportunities</li>
-          <h3 className={styles.pricing}>Starting from: $999,99</h3>
+      <div className="modal-body">
+        <ul className="body-list">
+          <li className="list-items">All included in Basic Analytics package</li>
+          <li className="list-items">Personalized insights for your business</li>
+          <li className="list-items">Usin IA</li>
+          <li className="list-items">Untapped opportunities</li>
+          <h3 className="pricing">Starting from: $999,99</h3>
         </ul>
       </div>
-      <div className={`${styles.modalFooter}`}>
-        <button onClick={closeModalAdvanced} className={styles.button}>Cerrar</button>
-        <button className={styles.button}>Contact Us</button>
+      <div className="modal-footer">
+        <button onClick={closeModalAdvanced} className="button">Cerrar</button>
+        <button className="button">Contact Us</button>
       </div>
     </div>
   </div>

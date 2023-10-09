@@ -29,10 +29,6 @@ const NavBar = () => {
           Services
         </Link>
 
-        <Link className="nav-links" to="/about" onClick={closeNavbar}>
-          About
-        </Link>
-
         <Link className="nav-links" to="/contact" onClick={closeNavbar}>
           Contact
         </Link>
