@@ -6,9 +6,9 @@ import "./homeQuerys.css";
 import { Slide } from "react-awesome-reveal";
 import Animation from "./Animation.jsx";
 //assets
-import Development from "../../assets/services1.jpg";
-import Analytics from "../../assets/services3.jpg";
-import Management from "../../assets/services6.jpg";
+import Development from "../../assets/development.jpg";
+import Analytics from "../../assets/analytics.jpg";
+import Management from "../../assets/management.jpg";
 
 const Home = () => {
   //data
@@ -34,7 +34,7 @@ const Home = () => {
     {
       id: 4,
       img: "/solutionsAzul.png",
-      title: "IMPLEMETATION",
+      title: "IMPLEMENTATION",
       text: "Seamless Execution, Real Results. We don't just design solutions; we make them a reality in your business operations, ensuring a smooth transition and immediate impact on your goals.",
     },
   ];
@@ -49,7 +49,7 @@ const Home = () => {
           <p className="home-text">
             As a small or medium-sized business owner, navigating rapidly
             changing market conditions can be challenging. That's where{" "}
-            <b>Dataholics</b> comes in your partner in agile business
+            <b>Dataholics</b> comes in as your partner in agile business
             transformation.
           </p>
           <p className="home-text">
@@ -97,7 +97,7 @@ const Home = () => {
               We want to fully understand what are your business data needings,
               your challenges, and your goals.
             </p>
-            <h2 className="title-support">We can support:</h2>
+            <h2 className="title-support">We support:</h2>
           </div>
 
           <div className="container-supports-imgs">
@@ -116,7 +116,7 @@ const Home = () => {
             </div>
 
             <div className="box-supports">
-              <h3 className="title-supports">Managment</h3>
+              <h3 className="title-supports">Management</h3>
              
                 <img className="img-supports"src={Management} alt="" />
               

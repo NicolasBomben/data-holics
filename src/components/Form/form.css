@@ -38,6 +38,7 @@ input:focus {
   width: 400px;
 }
 
+
 .text-area:focus {
   border-color: #e56143;
 }

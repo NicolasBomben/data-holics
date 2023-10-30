@@ -1,12 +1,13 @@
 import { useState } from "react";
+import { Slide } from "react-awesome-reveal";
 //components
 import ModalBasics from "../Modals/ModalBasics";
 import ModalAdvanced from "../Modals/ModalAdvanced";
 import ModalFull from "../Modals/ModalFull";
 //assets
-import ServicesOne from "../../assets/services1.jpg";
-import ServicesTwo from "../../assets/services5.jpg";
-import ServicesThree from "../../assets/services4.jpg";
+import BasicsAnalytics from "../../assets/basics.jpg";
+import AdvancedAnalytics from "../../assets/advanced.jpg";
+import FullAnalytics from "../../assets/full.jpg";
 //style
 import "./services.css";
 import "./servicesQuerys.css";
@@ -31,14 +32,16 @@ const Services = () => {
   return (
     <section className="services-container">
       <div className="services-title-container">
-        <h1 className="services-title">Our services</h1>
+        <Slide direction={"down"} delay={1e1} cascade damping={1e-1}>
+          <h1 className="services-title">Services</h1>
+        </Slide>
       </div>
 
       <div className="title-container">
         <h2 className="services-title-secondary">
           Analytics & Artificial intelligence for your business.
           <br />
-          Unsleash the power of your data whit Machine Learning and Analytics.
+          Unleash the power of your data whit Machine Learning and Analytics.
         </h2>
       </div>
 
@@ -48,13 +51,13 @@ const Services = () => {
           <h3 className="card-title">Basics Analytics</h3>
           <div className="card-image">
             <img
-              src={ServicesOne}
+              src={BasicsAnalytics}
               alt="basics-analytics"
               className="img-services"
             />
           </div>
           <button onClick={openModal} className="card-button">
-            Know More
+            Learn More
           </button>
           {showModal && <ModalBasics setShowModal={setShowModal} />}
         </div>
@@ -64,13 +67,13 @@ const Services = () => {
           <h3 className="card-title">Advanced Analytics</h3>
           <div className="card-image">
             <img
-              src={ServicesTwo}
+              src={AdvancedAnalytics}
               alt="advanced-analytics"
               className="img-services"
             />
           </div>
           <button onClick={openModalAdvanced} className="card-button">
-            Know More
+            Learn More
           </button>
           {showModalAdvanced && (
             <ModalAdvanced setShowModalAdvanced={setShowModalAdvanced} />
@@ -82,13 +85,13 @@ const Services = () => {
           <h3 className="card-title">Full Analytics</h3>
           <div className="card-image">
             <img
-              src={ServicesThree}
+              src={FullAnalytics}
               alt="full-analytics"
               className="img-services"
             />
           </div>
           <button onClick={openModalFull} className="card-button">
-            Know More
+            Learn More
           </button>
           {showModalFull && <ModalFull setShowModalFull={setShowModalFull} />}
         </div>

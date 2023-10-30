@@ -1,34 +1,43 @@
+import IconModal from "../../assets/Success-modified.svg";
+import "./modalAdvanced.css";
 
-import "./modal.css";
-
-const ModalAdvanced = ({setShowModalAdvanced}) => {
-
+const ModalAdvanced = ({ setShowModalAdvanced }) => {
   const closeModalAdvanced = () => {
-    setShowModalAdvanced(false)
-  }
+    setShowModalAdvanced(false);
+  };
 
   return (
-    <div className="modal">
-    <div className="modal-content">
-      <div className="modal-header">
-        <h4 className="modal-title">Advanced Analytics</h4>
-      </div>
-      <div className="modal-body">
-        <ul className="body-list">
-          <li className="list-items">All included in Basic Analytics package</li>
-          <li className="list-items">Personalized insights for your business</li>
-          <li className="list-items">Usin IA</li>
-          <li className="list-items">Untapped opportunities</li>
-          <h3 className="pricing">Starting from: $999,99</h3>
-        </ul>
-      </div>
-      <div className="modal-footer">
-        <button onClick={closeModalAdvanced} className="button">Cerrar</button>
-        <button className="button">Contact Us</button>
+    <div className="modal-advanced">
+      <div className="modal-content-advanced">
+        <div className="modal-header-advanced">
+          <h4 className="modal-title-advanced">Advanced</h4>
+        </div>
+        <div className="modal-body-advanced">
+          <span className="modal-list-advanced">
+            <img src={IconModal} alt="" className="icon-modal-advanced" />
+            <p className="modal-list-text-advanced">
+              Everything included in Basic Analytics package.
+            </p>
+          </span>
+          <span className="modal-list-advanced">
+            <img src={IconModal} alt="" className="icon-modal-advanced" />
+            <p className="modal-list-text-advanced">Using IA.</p>
+          </span>
+          <span className="modal-list-advanced">
+            <img src={IconModal} alt="" className="icon-modal-advanced" />
+            <p className="modal-list-text-advanced">Untapped opportunities</p>
+          </span>
+          <h3 className="pricing-advanced">Starting at: $999.99</h3>
+        </div>
+        <div className="modal-footer-advanced">
+          <button onClick={closeModalAdvanced} className="button-advanced">
+            Close
+          </button>
+          <button className="button-advanced">Contact Us</button>
+        </div>
       </div>
     </div>
-  </div>
   );
-}
+};
 
-export default ModalAdvanced
+export default ModalAdvanced;

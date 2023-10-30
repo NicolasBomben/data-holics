@@ -32,12 +32,12 @@ const Animation = () => {
 
   return (
     <div className="homeBox1" ref={myRef}>
-      <Slide  direction={"down"} delay={1e1} cascade damping={1e-1}>
-      <h1 className="homeMainTitle">
-        Data revolution,
-        <br/>
-        <span className="textQuaternary">simplified.</span>
-      </h1>
+      <Slide direction={"down"} delay={1e1} cascade damping={1e-1}>
+        <h1 className="homeMainTitle">
+          Data revolution,
+          <br />
+          <span className="textQuaternary">simplified.</span>
+        </h1>
       </Slide>
     </div>
   );

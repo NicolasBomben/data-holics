@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../../assets/logoDataDos.svg";
+import LogoData from "../../assets/DataLogo.svg";
 import "./navbar.css";
 
 const NavBar = () => {
@@ -18,8 +18,11 @@ const NavBar = () => {
 
   return (
     <header className="header">
-      {/*<img className="img-logo" src={logo} alt="data-holics-logo" />*/}
 
+      <Link to="/">
+        <img className="img-logo" src={LogoData} alt="data-holics-logo" />
+      </Link>
+      
       <nav ref={navRef} className={isOpen ? "responsive_nav" : ""}>
         <Link className="nav-links" to="/" onClick={closeNavbar}>
           Home
