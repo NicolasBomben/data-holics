@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import IconModal from "../../assets/Success-modified.svg";
 import "./modalFull.css";
 
@@ -46,7 +47,7 @@ const ModalFull = ({ setShowModalFull }) => {
           <button onClick={closeModalFull} className="button-full">
             Close
           </button>
-          <button className="button-full">Contact Us</button>
+          <Link to="/contact"> <button className="button-full">Contact Us</button> </Link>
         </div>
       </div>
     </div>

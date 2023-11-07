@@ -18,15 +18,16 @@
   }
 
   .card-tools-container {
-    width: 100%;
+    width: 100vw;
     height: 600px;
     flex-direction: row;
     gap: 0.5rem;
   }
 
   .card-tools-body {
-    width: 400px;
+    width: 350px;
     height: 450px;
+    
   }
 
   .card-tools-title {
@@ -35,6 +36,7 @@
 
   .card-tools-text {
     font-size: 1rem;
+    width: 300px;
   }
 
   .container-supports {
@@ -82,22 +84,31 @@
     width: 100vw;
   }
 
+
   .card-tools-container {
+    width: 100vw;
+    height: 600px;
+    flex-direction: row;
     gap: 4px;
   }
 
   .card-tools-body {
     width: 250px;
-    height: 450px;
+    height: 480px;
   }
 
   .card-tools-title {
     font-size: 1.5rem;
   }
 
+  .card-tools-sub-title{
+    text-align: center;
+    width: 200px;
+  }
+
   .card-tools-text {
     font-size: 1rem;
-    width: 200px;
+    width: 260px;
   }
 
   .container-supports-imgs {

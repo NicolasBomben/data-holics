@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import IconModal from "../../assets/Success-modified.svg";
 import "./modalAdvanced.css";
 
@@ -33,7 +34,7 @@ const ModalAdvanced = ({ setShowModalAdvanced }) => {
           <button onClick={closeModalAdvanced} className="button-advanced">
             Close
           </button>
-          <button className="button-advanced">Contact Us</button>
+          <Link to="/contact"> <button className="button-advanced">Contact Us</button> </Link>
         </div>
       </div>
     </div>

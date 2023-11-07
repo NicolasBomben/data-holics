@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./modalBasics.css";
 import IconModal from "../../assets/Success-modified.svg";
 import React from "react";
@@ -31,7 +32,7 @@ const Modal = ({ setShowModal }) => {
           <button onClick={closeModal} className="button-basic">
             Close
           </button>
-          <button className="button-basic">Contact Us</button>
+          <Link to="/contact"> <button className="button-basic">Contact Us</button> </Link>
         </div>
       </div>
     </div>

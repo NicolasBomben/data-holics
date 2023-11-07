@@ -81,11 +81,18 @@
     font-weight: 500;
 }
 
+.card-tools-sub-title{
+    font-size: 1rem;
+    font-weight: 500;
+    color:#da535f;
+    padding-top: 1rem;
+}
+
 .card-tools-text{
     font-size: 1rem;
     font-weight: 400;
     text-align: center;
-    padding-top: 1rem;
+    padding: 0.8rem;
 }
 
 .container-supports{
@@ -143,138 +150,3 @@
 
 
 
-/*
-@media (max-width: 1440px) {
-
-    .card-tools-body{
-        width: 350px;
-    }
-    
-    
-}
-
-@media (max-width: 1024px) {
-
-    .card-tools-container{
-        gap: 4px;
-    }
-
-    .card-tools-body{
-        width: 250px
-    }
-
-    .card-tools-title{
-        font-size: 1.5rem;
-    }
-
-    .card-tools-text{
-        font-size: 0.8rem;
-        font-weight: 400;
-        text-align: center;
-        padding-top: 1rem;
-    }
-    
-    .box-supports{
-        width: 300px;
-    }
-    
-    .img-supports{
-        width: 300px;
-        height: 300px;
-    }
-    
-    
-}
-
-@media (max-width: 768px){
-
-    .container-text{
-        height: 800px;
-    }
-
-    .card-tools-container{
-    
-        height: 1200px;
-        flex-direction: column;
-    }
-
-    .card-tools-body{
-        flex-wrap: wrap;
-        width: 700px;
-        height: 250px;
-    }
-
-    .text-support{
-        text-align: center;
-    }
-
-    .box-supports{
-        width: 200px;
-    }
-    
-    .img-supports{
-        width: 200px;
-        height: 200px;
-    }
-}
-
-@media (max-width: 425px){
-    .container-text{
-        height: 1200px;
-    }
-
-    .card-tools-container{
-        height: 1400px;
-        flex-direction: column;
-    }
-
-    .card-tools-body{
-        width: 300px;
-        height: 300px;
-    }
-
-    .text-support{
-        font-size: 0.8rem;
-        font-weight: 300;
-        line-height: 1.2;
-    }
-
-    .box-supports{
-        width: 100px;
-    }
-    
-    .img-supports{
-        width: 100px;
-        height: 100px;
-    }
-
-    .container-supports{
-        width: 400px;
-        height: 1200px;
-        overflow-y: hidden;
-    }
-
-    .container-supports-imgs{
-        width: 400px;
-        height: 800px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        gap: 0;
-    }
-
-}
-
-@media (max-width: 375px){
-    .container-text{
-        height: 1300px;
-    }
-}
-
-@media (max-width: 320px){
-    .container-text{
-        height: 1500px;
-    }
-}
-*/

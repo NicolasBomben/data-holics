@@ -9,6 +9,7 @@ import Animation from "./Animation.jsx";
 import Development from "../../assets/development.jpg";
 import Analytics from "../../assets/analytics.jpg";
 import Management from "../../assets/management.jpg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   //data
@@ -17,25 +18,29 @@ const Home = () => {
       id: 1,
       img: "/challengeAzul.png",
       title: "DIAGNOSIS",
-      text: "Your Challenges, Our Priority. We invest time to deeply understand your unique obstacles and aspirations, setting the stage for tailored solutions that work.",
+      subTitle: "Your Challenges, Our Priority.",
+      text: "We invest time to deeply understand your unique obstacles and aspirations, setting the stage for tailored solutions that work.",
     },
     {
       id: 2,
       img: "/embededAzul.png",
       title: "ANALYSIS",
-      text: "Unlocking Insights for Success. We dig deep into your data and operations, turning complex information into actionable strategies that align with your goals.",
+      subTitle: "Unlocking Insights for Success.",
+      text: "We dig deep into your data and operations, turning complex information into actionable strategies that align with your goals.",
     },
     {
       id: 3,
       img: "/growtAzul.png",
       title: "SOLUTIONS",
-      text: "Custom-Crafted for Your Success. Our expertly designed solutions tackle your specific challenges head-on, providing you with the tools you need to achieve your goals effortlessly.",
+      subTitle: "Custom-Crafted for Your Success.",
+      text: "Our expertly designed solutions tackle your specific challenges head-on, providing you with the tools you need to achieve your goals effortlessly.",
     },
     {
       id: 4,
       img: "/solutionsAzul.png",
       title: "IMPLEMENTATION",
-      text: "Seamless Execution, Real Results. We don't just design solutions; we make them a reality in your business operations, ensuring a smooth transition and immediate impact on your goals.",
+      subTitle: "Seamless Execution, Real Results.",
+      text: "We don't just design solutions; we make them a reality in your business operations, ensuring a smooth transition and immediate impact on your goals.",
     },
   ];
 
@@ -83,6 +88,7 @@ const Home = () => {
                     alt="home-imagenes"
                   />
                   <h3 className="card-tools-title">{dataHome.title}</h3>
+                  <h2 className="card-tools-sub-title">{dataHome.subTitle}</h2>
                   <p className="card-tools-text">{dataHome.text}</p>
                 </div>
               </Slide>
@@ -97,31 +103,33 @@ const Home = () => {
               We want to fully understand what are your business data needings,
               your challenges, and your goals.
             </p>
-            <h2 className="title-support">We support:</h2>
+            <h2 className="title-support">We support</h2>
           </div>
 
           <div className="container-supports-imgs">
             <div className="box-supports">
               <h3 className="title-supports">Development</h3>
-              
-                <img className="img-supports" src={Development} alt="" />
-              
+              <Link to="/services">
+                {" "}
+                <img className="img-supports" src={Development} alt="" />{" "}
+              </Link>
             </div>
 
             <div className="box-supports">
               <h3 className="title-supports">Analytics</h3>
-              
+              <Link to="/services">
+                {" "}
                 <img className="img-supports" src={Analytics} alt="" />
-              
+              </Link>
             </div>
 
             <div className="box-supports">
               <h3 className="title-supports">Management</h3>
-             
-                <img className="img-supports"src={Management} alt="" />
-              
+              <Link to="/services">
+                {" "}
+                <img className="img-supports" src={Management} alt="" />{" "}
+              </Link>
             </div>
-
           </div>
         </div>
       </section>

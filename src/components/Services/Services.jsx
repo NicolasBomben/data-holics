@@ -41,7 +41,7 @@ const Services = () => {
         <h2 className="services-title-secondary">
           Analytics & Artificial intelligence for your business.
           <br />
-          Unleash the power of your data whit Machine Learning and Analytics.
+          Unleash the power of your data with Machine Learning and Analytics.
         </h2>
       </div>
 
