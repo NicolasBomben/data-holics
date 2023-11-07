@@ -9,7 +9,7 @@ const ModalFull = ({ setShowModalFull }) => {
   };
 
   return (
-    <div className="modal-full">
+    <div className="modal-full" >
       <div className="modal-content-full">
         <div className="modal-header-full">
           <h4 className="modal-title-full">Full</h4>

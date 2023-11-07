@@ -1,36 +1,43 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Slide } from "react-awesome-reveal";
-//components
 import ModalBasics from "../Modals/ModalBasics";
 import ModalAdvanced from "../Modals/ModalAdvanced";
 import ModalFull from "../Modals/ModalFull";
-//assets
 import BasicsAnalytics from "../../assets/basics.jpg";
 import AdvancedAnalytics from "../../assets/advanced.jpg";
 import FullAnalytics from "../../assets/full.jpg";
-//style
 import "./services.css";
 import "./servicesQuerys.css";
 
 const Services = () => {
-  const [showModal, setShowModal] = useState(false);
-  const [showModalAdvanced, setShowModalAdvanced] = useState(false);
-  const [showModalFull, setShowModalFull] = useState(false);
+  const [selectedModal, setSelectedModal] = useState(null);
 
-  const openModal = () => {
-    setShowModal(true);
+  const openModal = (modal) => {
+    setSelectedModal(modal);
   };
 
-  const openModalAdvanced = () => {
-    setShowModalAdvanced(true);
+  const closeModals = () => {
+    setSelectedModal(null);
   };
 
-  const openModalFull = () => {
-    setShowModalFull(true);
-  };
+  // Agregar un manejador de eventos para la tecla Escape
+  useEffect(() => {
+    const handleKeyPress = (event) => {
+      if (event.key === "Escape") {
+        closeModals();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyPress);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyPress);
+    };
+  }, []);
 
   return (
     <section className="services-container">
+      
       <div className="services-title-container">
         <Slide direction={"down"} delay={1e1} cascade damping={1e-1}>
           <h1 className="services-title">Services</h1>
@@ -45,57 +52,47 @@ const Services = () => {
         </h2>
       </div>
 
-      {/*Basics*/}
       <div className="services-card-container">
-        <div className="card-content">
-          <h3 className="card-title">Basics Analytics</h3>
-          <div className="card-image">
-            <img
-              src={BasicsAnalytics}
-              alt="basics-analytics"
-              className="img-services"
-            />
-          </div>
-          <button onClick={openModal} className="card-button">
-            Learn More
-          </button>
-          {showModal && <ModalBasics setShowModal={setShowModal} />}
-        </div>
 
-        {/*Advanced*/}
-        <div className="card-content">
-          <h3 className="card-title">Advanced Analytics</h3>
-          <div className="card-image">
-            <img
-              src={AdvancedAnalytics}
-              alt="advanced-analytics"
-              className="img-services"
-            />
-          </div>
-          <button onClick={openModalAdvanced} className="card-button">
-            Learn More
-          </button>
-          {showModalAdvanced && (
-            <ModalAdvanced setShowModalAdvanced={setShowModalAdvanced} />
-          )}
+        {/*Basics*/}
+      <div className="card-content">
+        <h3 className="card-title">Basics Analytics</h3>
+        <div className="card-image">
+          <img src={BasicsAnalytics} alt="basics-analytics" className="img-services" />
         </div>
-
-        {/*Full*/}
-        <div className="card-content">
-          <h3 className="card-title">Full Analytics</h3>
-          <div className="card-image">
-            <img
-              src={FullAnalytics}
-              alt="full-analytics"
-              className="img-services"
-            />
-          </div>
-          <button onClick={openModalFull} className="card-button">
-            Learn More
-          </button>
-          {showModalFull && <ModalFull setShowModalFull={setShowModalFull} />}
-        </div>
+        <button onClick={() => openModal('basics')} className="card-button">
+          Learn More
+        </button>
+        {selectedModal === 'basics' && <ModalBasics setShowModal={closeModals} />}
       </div>
+
+      {/*Advanced*/}
+      <div className="card-content">
+        <h3 className="card-title">Advanced Analytics</h3>
+        <div className="card-image">
+          <img src={AdvancedAnalytics} alt="advanced-analytics" className="img-services" />
+        </div>
+        <button onClick={() => openModal('advanced')} className="card-button">
+          Learn More
+        </button>
+        {selectedModal === 'advanced' && <ModalAdvanced setShowModalAdvanced={closeModals} />}
+      </div>
+
+      {/*Full*/}
+      <div className="card-content">
+        <h3 className="card-title">Full Analytics</h3>
+        <div className="card-image">
+          <img src={FullAnalytics} alt="full-analytics" className="img-services" />
+        </div>
+        <button onClick={() => openModal('full')} className="card-button">
+          Learn More
+        </button>
+        {selectedModal === 'full' && <ModalFull setShowModalFull={closeModals} />}
+      </div>
+
+      </div>
+
+      
     </section>
   );
 };
