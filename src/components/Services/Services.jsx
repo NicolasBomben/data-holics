@@ -20,7 +20,7 @@ const Services = () => {
     setSelectedModal(null);
   };
 
-  // Agregar un manejador de eventos para la tecla Escape
+  
   useEffect(() => {
     const handleKeyPress = (event) => {
       if (event.key === "Escape") {
@@ -47,7 +47,7 @@ const Services = () => {
       <div className="title-container">
         <h2 className="services-title-secondary">
           Analytics & Artificial intelligence for your business.
-          <br />
+          <br/>
           Unleash the power of your data with Machine Learning and Analytics.
         </h2>
       </div>
