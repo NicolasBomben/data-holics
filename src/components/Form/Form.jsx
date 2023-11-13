@@ -64,11 +64,11 @@ const Form = () => {
       <form ref={form} onSubmit={sendEmail} className="form-container">
 
         <div className="form-box">
-        <Input type="text" name="user_name" placeholder="Nombre y apellido" setState={setName} state={valueName} />
+        <Input type="text" name="user_name" placeholder="Name" setState={setName} state={valueName} />
           <Input type="email" name="user_email" placeholder="Email" setState={setEmail} state={valueEmail} />
-          <Input type="text" name="user_business" placeholder="Empresa" setState={setEmpresa} state={valueEmpresa} />
-          <Input type="text" name="user_industry" placeholder="Industria" setState={setIndustria} state={valueIndustria} />
-          <Input type="text" name="user_role" placeholder="Cargo" setState={setCargo} state={valueCargo} />
+          <Input type="text" name="user_business" placeholder="Company" setState={setEmpresa} state={valueEmpresa} />
+          <Input type="text" name="user_industry" placeholder="Industry" setState={setIndustria} state={valueIndustria} />
+          <Input type="text" name="user_role" placeholder="Charge" setState={setCargo} state={valueCargo} />
         </div>
         <div className="form-box">
         <Input className="text-area" type="message" name="user_message" placeholder="Leave us your message" setState={setTextarea} state={valueTextarea}/>

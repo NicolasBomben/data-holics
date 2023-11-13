@@ -24,6 +24,11 @@ input {
   outline: none;
 }
 
+input::placeholder{
+  color:black;
+}
+
+
 input:focus {
   border-color: #e56143;
 }
@@ -38,11 +43,13 @@ input:focus {
   width: 400px;
 }
 
+.text-area::placeholder{
+  color: black;
+}
 
 .text-area:focus {
   border-color: #e56143;
 }
-
 
 .btn-submit {
   display: flex;

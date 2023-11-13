@@ -24,7 +24,7 @@ const Modal = ({ setShowModal }) => {
           </span>
           <span className="modal-list-basic">
             <img src={IconModal} alt="" className="icon-modal-basic" />
-            <p className="modal-list-text-basic">Deliver.</p>
+            <p className="modal-list-text-basic">Data Delivery.</p>
           </span>
           <h3 className="pricing-basic">Starting at: $599.99</h3>
         </div>

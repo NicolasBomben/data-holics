@@ -80,18 +80,18 @@ const Home = () => {
         <div className="card-tools-container">
           {dataHome.map((dataHome) => {
             return (
-              <Slide delay={1e2} cascade damping={1e-1} key={dataHome.id}>
-                <div className="card-tools-body">
-                  <img
-                    className="card-tools-img"
-                    src={dataHome.img}
-                    alt="home-imagenes"
-                  />
-                  <h3 className="card-tools-title">{dataHome.title}</h3>
-                  <h2 className="card-tools-sub-title">{dataHome.subTitle}</h2>
-                  <p className="card-tools-text">{dataHome.text}</p>
+                <div className="card-tools-body" key={dataHome.id}>
+                    <img
+                      className="card-tools-img"
+                      src={dataHome.img}
+                      alt="home-imagenes"
+                    />
+                    <h3 className="card-tools-title">{dataHome.title}</h3>
+                    <h2 className="card-tools-sub-title">
+                      {dataHome.subTitle}
+                    </h2>
+                    <p className="card-tools-text">{dataHome.text}</p>
                 </div>
-              </Slide>
             );
           })}
         </div>
