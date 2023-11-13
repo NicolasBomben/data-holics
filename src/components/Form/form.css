@@ -27,10 +27,14 @@ input {
 input::placeholder{
   color:black;
 }
-
+input:focus::placeholder{
+  color:#5c6fb2;
+  font-weight: 500;
+}
 
 input:focus {
   border-color: #e56143;
+  
 }
 
 .text-area {
@@ -46,6 +50,11 @@ input:focus {
 .text-area::placeholder{
   color: black;
 }
+.text-area:focus::placeholder{
+  color:#5c6fb2;
+  font-weight: 500;
+}
+
 
 .text-area:focus {
   border-color: #e56143;
