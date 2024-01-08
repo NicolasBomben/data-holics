@@ -9,9 +9,6 @@ const Footer = () => {
   return (
     <footer className="footer">
         <div className="footer-contact">
-            <span className="footer-contact-text">54 11 4162-9135</span>
-            <span className="footer-contact-text">rodrigosenabre@gmail.com</span>
-            <span className="footer-contact-text">Av Rivadavia 9840, C1407 CABA</span>
         </div>
 
         <div className="footer-social-media">

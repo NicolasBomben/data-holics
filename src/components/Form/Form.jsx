@@ -12,9 +12,9 @@ const Form = () => {
   
   //emailjs
   const form = useRef();
-  const serviceId = 'service_v8a3vuo';
-  const templateId = 'template_42jndtj';
-  const publicKey = 'VTFHGW1HwlxrzSLu4';
+  const serviceId = "service_japquta";
+  const templateId = "template_aa3gfku"
+  const publicKey = "U-mMxm0SHhP8xQdPM";
 
   //states
   const [valueName, setName] = useState('');

@@ -76,10 +76,11 @@ const Home = () => {
             </b>
           </p>
         </div>
-
+      
         <div className="card-tools-container">
           {dataHome.map((dataHome) => {
             return (
+            
                 <div className="card-tools-body" key={dataHome.id}>
                     <img
                       className="card-tools-img"
@@ -92,9 +93,11 @@ const Home = () => {
                     </h2>
                     <p className="card-tools-text">{dataHome.text}</p>
                 </div>
+      
             );
           })}
         </div>
+        
 
         <div className="container-supports">
           <div className="box-title-support">
